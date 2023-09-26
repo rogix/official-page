@@ -1,8 +1,12 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
+dependencies:
+  '@fontsource-variable/oswald':
+    specifier: ^5.0.12
+    version: 5.0.12
+  '@fontsource/mukta-vaani':
+    specifier: ^5.0.8
+    version: 5.0.8
 
 devDependencies:
   '@playwright/test':
@@ -303,6 +307,14 @@ packages:
     resolution: {integrity: sha512-NCC3zz2+nvYd+Ckfh87rA47zfu2QsQpvc6k1yzTk+b9KzRj0wkGa8LSoGOXN6Zv4lRf/EIoZ80biDh9HOI+RNQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource-variable/oswald@5.0.12:
+    resolution: {integrity: sha512-MybtuwY5o+XtKUGpx/A1ekk8JCsmc5b2OFaEkqY6I6gUcyvh9cuulXboPZH1tRASOyY2kJLbTP+dNVOCwYGhQw==}
+    dev: false
+
+  /@fontsource/mukta-vaani@5.0.8:
+    resolution: {integrity: sha512-dU7xXBVhZtJL9rVF112ppWf/fzdO25h5RAdFOaT3AdvUtfwUaijX0FSZ6hc/PBwmsWeBlnWXTMX7arHgLnYP3w==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
@@ -2294,3 +2306,7 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
