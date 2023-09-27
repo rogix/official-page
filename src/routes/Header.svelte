@@ -1,11 +1,25 @@
+<script>
+	function scrollToSection(e) {
+		const href = e.currentTarget.getAttribute('href');
+		const offsetTop = document.querySelector(href).offsetTop;
+
+		scroll({
+			top: offsetTop,
+			behavior: 'smooth'
+		});
+	}
+</script>
+
 <header>
 	<nav>
 		<ul>
 			<li><a href="/">ROGIX</a></li>
 			<ul>
-				<li><a href="/blog">01.<span>ABOUT</span></a></li>
-				<li><a href="/projects">02.<span>EXPERIENCE</span></a></li>
-				<li><a href="/contact">03.<span>WORK</span></a></li>
+				<li>
+					<a href="#about" on:click|preventDefault={scrollToSection}>01.<span>ABOUT</span></a>
+				</li>
+				<li><a href="#experience">02.<span>EXPERIENCE</span></a></li>
+				<li><a href="#work">03.<span>WORK</span></a></li>
 				<div>
 					<button class="btn btn-primary">LET'S CHAT</button>
 				</div>
@@ -20,6 +34,9 @@
 		color: #fff;
 		height: 80px;
 		padding-inline-start: 80px;
+		position: fixed;
+		right: 0;
+		left: 0;
 	}
 
 	nav {

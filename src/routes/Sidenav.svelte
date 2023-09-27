@@ -39,6 +39,8 @@
 		width: 80px;
 		justify-content: center;
 		align-items: center;
+		position: fixed;
+		top: 80px;
 	}
 
 	nav ul {

@@ -8,9 +8,11 @@
 <div class="app">
 	<Header />
 
+	<Sidenav />
 	<main class="main">
-		<Sidenav />
 		<slot />
+	</main>
+	<aside class="aside">
 		<div class="corner" />
 		<nav class="nav" />
 		<div class="pagination">
@@ -27,7 +29,7 @@
 
 			<img src={arrow} alt="arrow" class="arrow" />
 		</div>
-	</main>
+	</aside>
 </div>
 
 <style>
@@ -37,11 +39,12 @@
 
 	.main {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
+		padding-inline: 80px;
 	}
 
 	.corner {
-		position: absolute;
+		position: fixed;
 		right: 0;
 		top: 80px;
 		width: 80px;
@@ -49,8 +52,13 @@
 		background-color: #f57500;
 	}
 
+	.aside {
+		position: fixed;
+		right: 0;
+	}
+
 	.nav {
-		position: absolute;
+		position: fixed;
 		right: 0;
 		bottom: 0px;
 		width: 80px;
@@ -59,7 +67,7 @@
 	}
 
 	.pagination {
-		position: absolute;
+		position: fixed;
 		bottom: 50px;
 		right: 0px;
 		width: 80px;

@@ -12,12 +12,38 @@
 	<button class="btn btn-primary">Resume</button>
 </section>
 
+<section class="about" id="about">
+	<div class="about__container">
+		<div class="about__container--left">
+			<h2>About me</h2>
+			<p>
+				I'm a full-stack developer with a passion for building things. I'm always looking for new
+				opportunities to learn and grow.
+			</p>
+			<p>
+				I'm a full-stack developer with a passion for building things. I'm always looking for new
+				opportunities to learn and grow.
+			</p>
+			<p>
+				I'm a full-stack developer with a passion for building things. I'm always looking for new
+				opportunities to learn and grow.
+			</p>
+		</div>
+		<div class="about__container--right">
+			<img src="https://picsum.photos/200/300" alt="profile" />
+		</div>
+	</div>
+</section>
+
+<section class="experience" id="experience">I've worked..</section>
+
 <div class="circle" />
 
 <style>
 	.hero {
 		padding-left: 300px;
-		margin-block-start: 50px;
+		margin-block-start: 320px;
+		height: 100vh;
 	}
 
 	.hero > div {
@@ -36,6 +62,16 @@
 		font-weight: 700;
 		color: rgba(255, 255, 255, 0.51);
 		margin-bottom: 10px;
+	}
+
+	.about {
+		height: 100vh;
+		padding-inline: 80px;
+	}
+
+	#experience {
+		height: 100vh;
+		padding-inline: 80px;
 	}
 
 	.btn {
