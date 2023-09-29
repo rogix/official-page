@@ -1,3 +1,7 @@
+<script>
+	import About from './About.svelte';
+</script>
+
 <section class="hero">
 	<div class="circle">
 		<div class="hero__content">
@@ -16,28 +20,7 @@
 	</div>
 </section>
 
-<section class="about" id="about">
-	<div class="about__container">
-		<div class="about__container--left">
-			<h2>About me</h2>
-			<p>
-				I'm a full-stack developer with a passion for building things. I'm always looking for new
-				opportunities to learn and grow.
-			</p>
-			<p>
-				I'm a full-stack developer with a passion for building things. I'm always looking for new
-				opportunities to learn and grow.
-			</p>
-			<p>
-				I'm a full-stack developer with a passion for building things. I'm always looking for new
-				opportunities to learn and grow.
-			</p>
-		</div>
-		<div class="about__container--right">
-			<img src="https://picsum.photos/200/300" alt="profile" />
-		</div>
-	</div>
-</section>
+<About />
 
 <section class="experience" id="experience">I've worked..</section>
 
@@ -88,11 +71,6 @@
 
 	.hero__content span {
 		color: var(--primary-color);
-	}
-
-	.about {
-		height: 100vh;
-		padding-inline: 80px;
 	}
 
 	#experience {

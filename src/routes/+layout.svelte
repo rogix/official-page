@@ -12,6 +12,7 @@
 	<main class="main">
 		<slot />
 	</main>
+
 	<aside class="aside">
 		<div class="corner" />
 		<nav class="nav" />
