@@ -1,5 +1,6 @@
 <script>
 	import About from './About.svelte';
+	import Experience from './Experience.svelte';
 </script>
 
 <section class="hero">
@@ -21,8 +22,7 @@
 </section>
 
 <About />
-
-<section class="experience" id="experience">I've worked..</section>
+<Experience />
 
 <style>
 	:root {
@@ -73,11 +73,6 @@
 		color: var(--primary-color);
 	}
 
-	#experience {
-		height: 100vh;
-		padding-inline: 80px;
-	}
-
 	.btn {
 		background-color: var(--primary-color);
 		color: var(--white-color);
@@ -113,7 +108,7 @@
 		position: absolute;
 		top: 50%;
 		right: 100px;
-		left: -120px;
+		left: -150px;
 		height: 1px;
 		background: rgba(255, 255, 255, 0.2);
 	}
