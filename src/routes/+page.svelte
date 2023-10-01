@@ -4,7 +4,8 @@
 </script>
 
 <section class="hero">
-	<div class="circle">
+	<div class="hero__container">
+		<div class="circle" />
 		<div class="hero__content">
 			<h1>Welcome to my website</h1>
 			<h2>
@@ -32,11 +33,20 @@
 
 	.hero {
 		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero__container {
+		position: relative;
+		height: 450px;
+		width: 800px;
 	}
 
 	.hero__content {
 		position: absolute;
-		left: 30%;
+		left: 20%;
 		top: 15%;
 		width: 800px;
 	}
@@ -93,10 +103,8 @@
 		border-radius: 50%;
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		box-shadow: 0px 0px 0px 52px rgba(255, 255, 255, 0.05);
-		left: 30%;
-		margin-left: -255px;
-		top: 55%;
-		margin-top: -245px;
+		left: 0;
+		top: 0;
 		z-index: -2;
 		background: rgba(255, 255, 255, 0.02);
 		border-right-color: var(--primary-color);
