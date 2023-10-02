@@ -32,7 +32,7 @@
 
 <style>
 	nav {
-		display: inline-flex;
+		display: none;
 		flex-direction: column;
 		background-color: #313131;
 		height: calc(100vh - 80px);
@@ -70,5 +70,11 @@
 	.icon {
 		width: 20px;
 		height: 20px;
+	}
+
+	@media (min-width: 860px) {
+		nav {
+			display: flex;
+		}
 	}
 </style>

@@ -33,10 +33,11 @@
 		background-color: #313131;
 		color: #fff;
 		height: 80px;
-		padding-inline-start: 80px;
+		padding-inline-start: 20px;
 		position: fixed;
 		right: 0;
 		left: 0;
+		z-index: 1;
 	}
 
 	nav {
@@ -85,5 +86,11 @@
 
 	nav ul a span {
 		color: #f57500;
+	}
+
+	@media (min-width: 768px) {
+		header {
+			padding-inline-start: 80px;
+		}
 	}
 </style>

@@ -7,7 +7,14 @@
 @import '@fontsource-variable/oswald';
 
 :root {
-	font-family: 'Poppins', sans-serif;
+	--font-family-oswald: 'Oswald', sans-serif;
+	--font-family-mukta: 'Mukta Vaani', sans-serif;
+	--font-family-poppins: 'Poppins', sans-serif;
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+	font-family: var(--font-family-poppins);
 }
 
 body {

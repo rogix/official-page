@@ -40,15 +40,14 @@
 
 	.hero__container {
 		position: relative;
-		height: 450px;
-		width: 800px;
+		height: calc(100vh - 80px);
+		width: 100%;
 	}
 
 	.hero__content {
-		position: absolute;
-		left: 20%;
-		top: 15%;
-		width: 800px;
+		padding-block-start: 80px;
+		width: auto;
+		height: 100vh;
 	}
 
 	.hero__content h1 {
@@ -63,9 +62,9 @@
 
 	.hero__content h2 {
 		font-family: 'Oswald', sans-serif;
-		line-height: 62px;
+		line-height: 52px;
 		color: var(--white-color);
-		font-size: 50px;
+		font-size: 40px;
 		font-weight: bold;
 		text-transform: uppercase;
 		margin: 0;
@@ -97,6 +96,7 @@
 	}
 
 	.circle {
+		display: none;
 		position: relative;
 		width: 450px;
 		height: 450px;
@@ -132,5 +132,31 @@
 		margin-top: -4px;
 		transition: all 0.5s ease-in-out;
 		transform: scale(1);
+	}
+
+	@media (min-width: 768px) {
+		.hero__container {
+			position: relative;
+			height: 450px;
+			width: 1024px;
+		}
+
+		.hero__content {
+			position: absolute;
+			left: 80px;
+			top: 15%;
+			padding-block-start: 0;
+			width: auto;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.circle {
+			display: block;
+		}
+
+		.hero__content {
+			left: 15%;
+		}
 	}
 </style>
