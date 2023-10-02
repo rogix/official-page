@@ -15,7 +15,6 @@
 
 <style>
 	.about {
-		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -23,7 +22,7 @@
 
 	.about h2 {
 		font-family: 'Mukta Vaani', sans-serif;
-		font-size: 50px;
+		font-size: 40px;
 		color: #fff;
 		font-weight: 500;
 		margin: 0;
@@ -31,12 +30,11 @@
 
 	.about h2 span {
 		color: #f57500;
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.about__content {
-		max-width: 600px;
-		margin-left: 20%;
+		margin-block: 40px;
 	}
 
 	.about__content p {
@@ -46,5 +44,24 @@
 		font-weight: 300;
 		line-height: 1.5;
 		letter-spacing: 2px;
+	}
+
+	@media (min-width: 768px) {
+		.about {
+			height: 100vh;
+		}
+
+		.about h2 span {
+			font-size: 40px;
+		}
+
+		.about h2 {
+			font-size: 50px;
+		}
+
+		.about__content {
+			max-width: 600px;
+			margin-left: 20%;
+		}
 	}
 </style>
