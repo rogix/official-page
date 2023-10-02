@@ -38,21 +38,15 @@
 
 <style>
 	#experience {
-		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
 
-	.experience__content {
-		max-width: 800px;
-		margin-left: 20%;
-		padding-block-start: 130px;
-	}
-
 	.experience h2 {
 		font-family: 'Mukta Vaani', sans-serif;
-		font-size: 50px;
+		font-size: 40px;
+		line-height: 1.3;
 		color: #fff;
 		font-weight: 500;
 		margin: 0;
@@ -85,6 +79,7 @@
 		font-family: 'Oswald', sans-serif;
 		font-size: 20px;
 		color: #fff;
+		line-height: 1.4;
 		font-weight: 500;
 		margin: 0;
 	}
@@ -92,7 +87,7 @@
 	.experience__content--list li h4 {
 		font-family: 'Oswald', sans-serif;
 		font-size: 16px;
-		color: #fff;
+		color: rgba(255, 255, 255, 0.5);
 		font-weight: 300;
 		margin: 0;
 		padding-block-start: 6px;
@@ -115,5 +110,21 @@
 		letter-spacing: 2px;
 		margin: 0;
 		padding-block-start: 16px;
+	}
+
+	@media (min-width: 768px) {
+		#experience {
+			height: 100vh;
+		}
+
+		.experience__content {
+			max-width: 800px;
+			margin-left: 20%;
+			padding-block-start: 130px;
+		}
+
+		.experience h2 {
+			font-size: 50px;
+		}
 	}
 </style>
