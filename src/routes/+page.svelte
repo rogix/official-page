@@ -35,7 +35,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-block-start: 80px;
 	}
 
 	.hero__container {
@@ -146,19 +145,38 @@
 
 	@media (min-width: 1024px) {
 		.hero {
-			min-height: 100vh;
+			min-height: calc(100vh - 80px);
 		}
 
 		.circle {
 			display: block;
 		}
 
-		.hero__container {
-			height: calc(100vh - 80px);
+		.hero__content {
+			left: 15%;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		.hero__content h2 {
+			line-height: 62px;
+			font-size: 50px;
+		}
+	}
+
+	@media (min-width: 1536px) {
+		.hero__content h2 {
+			line-height: 72px;
+			font-size: 60px;
 		}
 
 		.hero__content {
-			left: 15%;
+			top: 10%;
+			left: 0;
+		}
+
+		.circle {
+			left: -15%;
 		}
 	}
 </style>

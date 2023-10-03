@@ -18,8 +18,12 @@
 				<li>
 					<a href="#about" on:click|preventDefault={scrollToSection}>01.<span>ABOUT</span></a>
 				</li>
-				<li><a href="#experience">02.<span>EXPERIENCE</span></a></li>
-				<li><a href="#work">03.<span>WORK</span></a></li>
+				<li>
+					<a href="#experience" on:click|preventDefault={scrollToSection}
+						>02.<span>EXPERIENCE</span></a
+					>
+				</li>
+				<li><a href="#work" on:click|preventDefault={scrollToSection}>03.<span>WORK</span></a></li>
 				<div>
 					<button class="btn btn-primary">LET'S CHAT</button>
 				</div>

@@ -19,7 +19,6 @@
 	.about {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: center; */
 	}
 
 	.about h2 {
