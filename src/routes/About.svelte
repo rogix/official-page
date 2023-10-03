@@ -1,15 +1,17 @@
 <section class="about" id="about">
-	<div class="about__content">
-		<h2><span>01.</span> About me</h2>
-		<p>
-			Hello, I'm Rogério! I'm a software engineer hailing from Brazil with seven years of experience
-			in the field. My passion for crafting digital experiences ignited my journey, with a
-			particular focus on user interfaces in the early days. While I still thoroughly enjoy crafting
-			web UIs, my interests have expanded to encompass other domains, including iOS mobile
-			development, backend work, and the entire software development lifecycle. I have a deep-seated
-			passion for problem-solving, irrespective of the technology stack, although I have primarily
-			been immersed in the world of React.js and Node.js.
-		</p>
+	<div class="about__container">
+		<div class="about__content">
+			<h2><span>01.</span> About me</h2>
+			<p>
+				Hello! I'm a software engineer hailing from Brazil with seven years of experience in the
+				field. My passion for crafting digital experiences ignited my journey, with a particular
+				focus on user interfaces in the early days. While I still thoroughly enjoy crafting web UIs,
+				my interests have expanded to encompass other domains, including iOS mobile development,
+				backend work, and the entire software development lifecycle. I have a deep-seated passion
+				for problem-solving, irrespective of the technology stack, although I have primarily been
+				immersed in the world of React.js and Node.js.
+			</p>
+		</div>
 	</div>
 </section>
 
@@ -17,7 +19,7 @@
 	.about {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		/* justify-content: center; */
 	}
 
 	.about h2 {
@@ -47,10 +49,6 @@
 	}
 
 	@media (min-width: 768px) {
-		.about {
-			height: 100vh;
-		}
-
 		.about h2 span {
 			font-size: 40px;
 		}
@@ -61,7 +59,29 @@
 
 		.about__content {
 			max-width: 600px;
-			margin-left: 20%;
+			margin-inline-start: 80px;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.about {
+			height: 100vh;
+		}
+
+		.about__container {
+			width: 100%;
+			max-width: 1024px;
+			margin: 0 auto;
+		}
+
+		.about__content {
+			margin-inline-start: 15%;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		.about__content {
+			margin-inline-start: 0px;
 		}
 	}
 </style>

@@ -1,38 +1,41 @@
 <section class="experience" id="experience">
-	<div class="experience__content">
-		<h2><span>02. </span>Where I've worked</h2>
-		<p>
-			Over the years, I've had the opportunity to work with some fantastic companies and people.
-			I've learned a lot from each of these experiences.
-		</p>
+	<div class="experience__container">
+		<div class="experience__content">
+			<h2><span>02. </span>Where I've worked</h2>
+			<p>
+				Over the years, I've had the opportunity to work with some fantastic companies and people.
+				I've learned a lot from each of these experiences.
+			</p>
 
-		<ul class="experience__content--list">
-			<li class="experience__content--list-item">
-				<h3>Front-end | Full-stack Engineer <span>@ Ilegra</span></h3>
-				<h4>2021 - present</h4>
-				<p>
-					Ilegra is a software factory that develops solutions for the digital transformation of
-					businesses. I work as a front-end engineer, developing products for the company's clients.
-				</p>
-			</li>
-			<li class="experience__content--list-item">
-				<h3>Software Engineer <span>@ Por A Mais B</span></h3>
-				<h4>2019 - 2021</h4>
-				<p>
-					Por A Mais B is a Brazilian startup that develops solutions for the education sector. I
-					worked as a software engineer, developing new features and maintaining the company's main
-					product.
-				</p>
-			</li>
-			<li class="experience__content--list-item">
-				<h3>Web Developer <span>@ IBGE</span></h3>
-				<h4>2017 - 2019</h4>
-				<p>
-					IBGE is the Brazilian Institute of Geography and Statistics. I worked as a web developer
-					on the company's main website, developing new features and maintaining the website.
-				</p>
-			</li>
-		</ul>
+			<ul class="experience__content--list">
+				<li class="experience__content--list-item">
+					<h3>Front-end | Full-stack Engineer <span>@ Ilegra</span></h3>
+					<h4>2021 - present</h4>
+					<p>
+						Ilegra is a software factory that develops solutions for the digital transformation of
+						businesses. I work as a front-end engineer, developing products for the company's
+						clients.
+					</p>
+				</li>
+				<li class="experience__content--list-item">
+					<h3>Software Engineer <span>@ Por A Mais B</span></h3>
+					<h4>2019 - 2021</h4>
+					<p>
+						Por A Mais B is a Brazilian startup that develops solutions for the education sector. I
+						worked as a software engineer, developing new features and maintaining the company's
+						main product.
+					</p>
+				</li>
+				<li class="experience__content--list-item">
+					<h3>Web Developer <span>@ IBGE</span></h3>
+					<h4>2017 - 2019</h4>
+					<p>
+						IBGE is the Brazilian Institute of Geography and Statistics. I worked as a web developer
+						on the company's main website, developing new features and maintaining the website.
+					</p>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>
 
@@ -118,13 +121,32 @@
 		}
 
 		.experience__content {
-			max-width: 800px;
-			margin-left: 20%;
-			padding-block-start: 130px;
+			max-width: 80%;
+			margin-inline-start: 80px;
+			/* padding-block-start: 130px; */
 		}
 
 		.experience h2 {
 			font-size: 50px;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.experience__container {
+			width: 100%;
+			max-width: 1024px;
+			margin: 0 auto;
+		}
+
+		.experience__content {
+			max-width: 750px;
+			margin-inline-start: 15%;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		.experience__content {
+			margin-inline-start: 0px;
 		}
 	}
 </style>

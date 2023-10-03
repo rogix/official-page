@@ -72,7 +72,7 @@
 		height: 20px;
 	}
 
-	@media (min-width: 860px) {
+	@media (min-width: 1024px) {
 		nav {
 			display: flex;
 		}

@@ -88,6 +88,12 @@
 		color: #f57500;
 	}
 
+	@media (min-width: 400px) {
+		header {
+			padding-inline-start: 40px;
+		}
+	}
+
 	@media (min-width: 768px) {
 		header {
 			padding-inline-start: 80px;

@@ -32,22 +32,16 @@
 	}
 
 	.hero {
-		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-block-start: 80px;
 	}
 
 	.hero__container {
 		position: relative;
 		height: calc(100vh - 80px);
 		width: 100%;
-	}
-
-	.hero__content {
-		padding-block-start: 80px;
-		width: auto;
-		height: 100vh;
 	}
 
 	.hero__content h1 {
@@ -151,8 +145,16 @@
 	}
 
 	@media (min-width: 1024px) {
+		.hero {
+			min-height: 100vh;
+		}
+
 		.circle {
 			display: block;
+		}
+
+		.hero__container {
+			height: calc(100vh - 80px);
 		}
 
 		.hero__content {

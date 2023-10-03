@@ -23,6 +23,15 @@
 		display: flex;
 		flex-direction: column;
 		padding-inline: 20px;
+		position: relative;
+		top: 80px;
+		gap: 40px;
+	}
+
+	@media (min-width: 400px) {
+		.main {
+			padding-inline: 40px;
+		}
 	}
 
 	@media (min-width: 768px) {
