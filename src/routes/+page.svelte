@@ -3,7 +3,7 @@
 	import Experience from './Experience.svelte';
 </script>
 
-<section class="hero">
+<section class="hero" id="hero">
 	<div class="hero__container">
 		<div class="circle" />
 		<div class="hero__content">

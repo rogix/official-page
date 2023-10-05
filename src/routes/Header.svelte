@@ -1,13 +1,5 @@
-<script>
-	function scrollToSection(e) {
-		const href = e.currentTarget.getAttribute('href');
-		const offsetTop = document.querySelector(href).offsetTop;
-
-		scroll({
-			top: offsetTop,
-			behavior: 'smooth'
-		});
-	}
+<script lang="ts">
+	import { scrollToSection } from '$lib/utils/scrollUtils';
 </script>
 
 <header>

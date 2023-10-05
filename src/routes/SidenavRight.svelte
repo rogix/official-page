@@ -1,15 +1,49 @@
 <script>
+	import { onMount } from 'svelte';
 	import arrow from '$lib/icons/arrow.svg';
+	import { scrollToSection } from '$lib/utils/scrollUtils';
+
+	onMount(() => {
+		const sections = document.querySelectorAll('section');
+		const navLinks = document.querySelectorAll('.navigation a');
+
+		window.addEventListener('scroll', () => {
+			let current = '';
+			sections.forEach((section) => {
+				const sectionTop = section.offsetTop;
+				const sectionHeight = section.clientHeight;
+				if (scrollY >= sectionTop - sectionHeight / 3) {
+					current = section.getAttribute('id') ?? '';
+				}
+			});
+
+			navLinks.forEach((a) => {
+				a.classList.remove('active');
+				if (a.classList.contains(current)) {
+					a.classList.add('active');
+				}
+			});
+		});
+	});
 </script>
 
 <aside class="aside">
 	<div class="corner" />
 	<nav class="nav" />
-	<div class="pagination">
-		<span class="active" />
-		<span />
-		<span />
-	</div>
+	<nav class="navigation">
+		<a href="#hero" class="hero" on:click|preventDefault={scrollToSection}>
+			<span />
+		</a>
+		<a href="#about" class="about active" on:click|preventDefault={scrollToSection}>
+			<span />
+		</a>
+		<a href="#experience" class="experience" on:click|preventDefault={scrollToSection}>
+			<span />
+		</a>
+		<!-- <a href="#work" class="work">
+			<span />
+		</a> -->
+	</nav>
 	<div class="scroll-down">
 		<div class="scroll-wrapper">
 			<div class="mousey">
@@ -46,7 +80,7 @@
 		background-color: #313131;
 	}
 
-	.pagination {
+	.navigation {
 		position: fixed;
 		bottom: 50px;
 		right: 0px;
@@ -54,7 +88,7 @@
 		z-index: 100;
 	}
 
-	.pagination::before {
+	.navigation::before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -64,7 +98,7 @@
 		background: rgba(255, 255, 255, 0.05);
 	}
 
-	.pagination span {
+	.navigation a {
 		display: inline-block;
 		width: 100%;
 		background: none;
@@ -75,7 +109,7 @@
 		opacity: 1;
 	}
 
-	.pagination span::before {
+	.navigation a::before {
 		content: '';
 		position: absolute;
 		left: 50%;
@@ -87,11 +121,11 @@
 		margin-left: -3px;
 	}
 
-	.pagination span.active::before {
+	.navigation a.active::before {
 		background: #f57500;
 	}
 
-	.pagination span::after {
+	.navigation a::after {
 		content: '';
 		position: absolute;
 		left: 50%;
@@ -106,7 +140,7 @@
 		transform: scale(0);
 	}
 
-	.pagination span.active::after {
+	.navigation a.active::after {
 		transform: scale(1.6);
 	}
 
