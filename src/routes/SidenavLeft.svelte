@@ -5,6 +5,7 @@
 </script>
 
 <nav>
+	<span class="lc" />
 	<ul>
 		<li>
 			<a href="https://www.linkedin.com/in/rogmxp/"
@@ -46,6 +47,27 @@
 	nav ul {
 		margin: 0;
 		padding: 0;
+	}
+
+	nav::before {
+		content: '';
+		position: absolute;
+		left: 50%;
+		width: 1px;
+		height: 70px;
+		top: 0;
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	.lc {
+		background-color: #f57500;
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		width: 6px;
+		height: 6px;
+		margin-left: -3px;
+		border-radius: 50%;
 	}
 
 	li a {

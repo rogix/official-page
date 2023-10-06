@@ -3,6 +3,7 @@
 </script>
 
 <header>
+	<span class="lc" />
 	<nav>
 		<ul>
 			<li><a href="/">ROGIX</a></li>
@@ -34,6 +35,17 @@
 		right: 0;
 		left: 0;
 		z-index: 1;
+	}
+
+	.lc {
+		background-color: #f57500;
+		position: absolute;
+		top: 30px;
+		left: 1.7%;
+		border-radius: 50%;
+		/* rotate: -45deg; */
+		width: 20px;
+		height: 20px;
 	}
 
 	nav {
