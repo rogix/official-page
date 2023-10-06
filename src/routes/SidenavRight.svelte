@@ -104,7 +104,6 @@
 		background: none;
 		position: relative;
 		height: 6px;
-		display: inline-block;
 		border-radius: 100%;
 		opacity: 1;
 	}

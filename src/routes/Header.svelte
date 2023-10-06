@@ -7,17 +7,23 @@
 	<nav>
 		<ul>
 			<li><a href="/">ROGIX</a></li>
-			<ul>
+			<ul class="header-nav">
 				<li>
-					<a href="#about" on:click|preventDefault={scrollToSection}>01.<span>ABOUT</span></a>
+					<a href="#about" on:click|preventDefault={scrollToSection}
+						>01.<span class="item">ABOUT</span></a
+					>
 				</li>
 				<li>
 					<a href="#experience" on:click|preventDefault={scrollToSection}
-						>02.<span>EXPERIENCE</span></a
+						>02.<span class="item">EXPERIENCE</span></a
 					>
 				</li>
-				<li><a href="#work" on:click|preventDefault={scrollToSection}>03.<span>WORK</span></a></li>
-				<div>
+				<li>
+					<a href="#work" on:click|preventDefault={scrollToSection}
+						>03.<span class="item">WORK</span></a
+					>
+				</li>
+				<div class="item">
 					<button class="btn btn-primary">LET'S CHAT</button>
 				</div>
 			</ul>
@@ -38,14 +44,18 @@
 	}
 
 	.lc {
+		display: none;
 		background-color: #f57500;
 		position: absolute;
 		top: 30px;
 		left: 1.7%;
 		border-radius: 50%;
-		/* rotate: -45deg; */
 		width: 20px;
 		height: 20px;
+	}
+
+	.item {
+		display: none;
 	}
 
 	nav {
@@ -87,6 +97,7 @@
 	}
 
 	nav ul a {
+		display: flex;
 		color: #fff;
 		color: rgba(255, 255, 255, 0.51);
 		text-decoration: none;
@@ -105,6 +116,16 @@
 	@media (min-width: 768px) {
 		header {
 			padding-inline-start: 80px;
+		}
+
+		.item {
+			display: flex;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.lc {
+			display: block;
 		}
 	}
 </style>
