@@ -4,7 +4,7 @@
 	import youtube from '$lib/icons/youtube.svg';
 </script>
 
-<nav>
+<aside>
 	<span class="lc" />
 	<ul>
 		<li>
@@ -29,10 +29,10 @@
 			>
 		</li>
 	</ul>
-</nav>
+</aside>
 
 <style>
-	nav {
+	aside {
 		display: none;
 		flex-direction: column;
 		background-color: #313131;
@@ -42,20 +42,21 @@
 		align-items: center;
 		position: fixed;
 		top: 80px;
+		z-index: 9;
 	}
 
-	nav ul {
+	aside ul {
 		margin: 0;
 		padding: 0;
 	}
 
-	nav::before {
+	aside::before {
 		content: '';
 		position: absolute;
 		left: 50%;
 		width: 1px;
 		height: 70px;
-		top: 0;
+		bottom: 0px;
 		background: rgba(255, 255, 255, 0.2);
 	}
 
@@ -95,7 +96,7 @@
 	}
 
 	@media (min-width: 1024px) {
-		nav {
+		aside {
 			display: flex;
 		}
 	}

@@ -3,14 +3,34 @@
 		<div class="about__content">
 			<h2><span>01.</span> About me</h2>
 			<p>
-				Hello! I'm a software engineer hailing from Brazil with seven years of experience in the
-				field. My passion for crafting digital experiences ignited my journey, with a particular
-				focus on user interfaces in the early days. While I still thoroughly enjoy crafting web UIs,
-				my interests have expanded to encompass other domains, including iOS mobile development,
-				backend work, and the entire software development lifecycle. I have a deep-seated passion
-				for problem-solving, irrespective of the technology stack, although I have primarily been
-				immersed in the world of React.js and Node.js.
+				Greetings from the vibrant landscapes of Brazil! I've dedicated seven fulfilling years to
+				the software engineering world. My journey began with a profound interest in web UIs, driven
+				by the allure of designing captivating interfaces. Over time, my expertise has broadened.
+				Beyond just front-end development, I've delved deep into backend intricacies and have grown
+				passionate about the entirety of the software development process.
 			</p>
+			<p>
+				Are you faced with a technical challenge? I thrive on solving complex problems. While my
+				experiences have often intertwined with React.js and Node.js, I remain adaptable and eager
+				to explore new technologies. Let's collaborate and craft impactful digital solutions
+				together.*
+			</p>
+
+			<p>*I love <span>svelte</span> btw.</p>
+
+			<ul>
+				<div>Some tools I play with:</div>
+
+				<li>JavaScript (ES6+)</li>
+				<li>React</li>
+				<li>Node.js</li>
+				<li>Express</li>
+				<li>PostgreSQL</li>
+				<li>Git</li>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Svelte</li>
+			</ul>
 		</div>
 	</div>
 </section>
@@ -34,6 +54,10 @@
 		font-size: 30px;
 	}
 
+	.about p span {
+		color: #f57500;
+	}
+
 	.about__content {
 		margin-block: 40px;
 	}
@@ -45,6 +69,32 @@
 		font-weight: 300;
 		line-height: 1.5;
 		letter-spacing: 2px;
+	}
+
+	.about__content ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.about__content ul div {
+		font-family: 'Oswald', sans-serif;
+		font-size: 16px;
+		color: rgba(255, 255, 255, 0.51);
+		font-weight: 300;
+		line-height: 1.5;
+		letter-spacing: 2px;
+		display: flex;
+		width: 100%;
+	}
+
+	.about__content ul li {
+		background-color: #f57500;
+		padding: 10px 20px;
+		border-radius: 5px;
 	}
 
 	@media (min-width: 768px) {
