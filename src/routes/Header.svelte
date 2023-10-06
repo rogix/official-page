@@ -48,7 +48,7 @@
 		background-color: #f57500;
 		position: absolute;
 		top: 30px;
-		left: 1.7%;
+		left: 30px;
 		border-radius: 50%;
 		width: 20px;
 		height: 20px;
