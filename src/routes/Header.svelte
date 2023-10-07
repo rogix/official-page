@@ -23,10 +23,10 @@
 						>03.<span class="item">WORK</span></a
 					>
 				</li>
-				<div class="item">
-					<button class="btn btn-primary">LET'S CHAT</button>
-				</div>
 			</ul>
+			<div class="item">
+				<button class="btn btn-primary">LET'S CHAT</button>
+			</div>
 		</div>
 	</nav>
 </header>
