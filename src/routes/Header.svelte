@@ -5,22 +5,31 @@
 <header>
 	<span class="lc" />
 	<nav class="nav">
-		<a href="/">ROGIX</a>
+		<a href="/" aria-label="Hero section" tabindex="0">ROGIX</a>
 		<div class="right-content">
 			<ul class="nav-items">
 				<li>
-					<a href="#about" on:click|preventDefault={scrollToSection}
-						>01.<span class="item">ABOUT</span></a
+					<a
+						href="#about"
+						on:click|preventDefault={scrollToSection}
+						aria-label="About section"
+						tabindex="0">01.<span class="nav-item">ABOUT</span></a
 					>
 				</li>
 				<li>
-					<a href="#experience" on:click|preventDefault={scrollToSection}
-						>02.<span class="item">EXPERIENCE</span></a
+					<a
+						href="#experience"
+						on:click|preventDefault={scrollToSection}
+						aria-label="Experience section"
+						tabindex="0">02.<span class="nav-item">EXPERIENCE</span></a
 					>
 				</li>
 				<li>
-					<a href="#work" on:click|preventDefault={scrollToSection}
-						>03.<span class="item">WORK</span></a
+					<a
+						href="#work"
+						on:click|preventDefault={scrollToSection}
+						aria-label="Work section"
+						tabindex="0">03.<span class="nav-item">WORK</span></a
 					>
 				</li>
 			</ul>
@@ -54,7 +63,7 @@
 		height: 20px;
 	}
 
-	.item {
+	.nav-item {
 		display: none;
 	}
 
@@ -116,8 +125,8 @@
 		color: #fff;
 		color: rgba(255, 255, 255, 0.51);
 		text-decoration: none;
+		padding: 5px 10px;
 	}
-
 	.nav a span {
 		color: #f57500;
 	}
@@ -133,7 +142,7 @@
 			padding-inline-start: 80px;
 		}
 
-		.item {
+		.nav-item {
 			display: flex;
 		}
 

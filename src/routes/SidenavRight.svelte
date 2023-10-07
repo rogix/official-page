@@ -31,13 +31,31 @@
 	<div class="corner" />
 	<nav class="nav" />
 	<nav class="navigation">
-		<a href="#hero" class="hero" on:click|preventDefault={scrollToSection}>
+		<a
+			href="#hero"
+			class="hero"
+			on:click|preventDefault={scrollToSection}
+			aria-label="Hero section"
+			tabindex="0"
+		>
 			<span />
 		</a>
-		<a href="#about" class="about active" on:click|preventDefault={scrollToSection}>
+		<a
+			href="#about"
+			class="about active"
+			on:click|preventDefault={scrollToSection}
+			aria-label="about section"
+			tabindex="0"
+		>
 			<span />
 		</a>
-		<a href="#experience" class="experience" on:click|preventDefault={scrollToSection}>
+		<a
+			href="#experience"
+			class="experience"
+			on:click|preventDefault={scrollToSection}
+			aria-label="experience section"
+			tabindex="0"
+		>
 			<span />
 		</a>
 		<!-- <a href="#work" class="work">
@@ -86,6 +104,11 @@
 		right: 0px;
 		width: 80px;
 		z-index: 100;
+		display: flex;
+		align-items: center;
+		height: 100px;
+		justify-content: space-around;
+		flex-direction: column;
 	}
 
 	.navigation::before {
@@ -100,7 +123,6 @@
 
 	.navigation a {
 		display: inline-block;
-		width: 100%;
 		background: none;
 		position: relative;
 		height: 6px;
