@@ -27,7 +27,8 @@
 
 <style>
 	:root {
-		--primary-color: #f57500;
+		--primary-color: #ba5900;
+		--secondary-color: #f57500;
 		--white-color: #ffffff;
 	}
 
@@ -72,7 +73,7 @@
 	}
 
 	.hero__content span {
-		color: var(--primary-color);
+		color: var(--secondary-color);
 	}
 
 	.btn {

@@ -112,7 +112,7 @@
 		height: 40px;
 		width: 140px;
 		border: none;
-		background-color: #b1590662;
+		background-color: #aa5205;
 		color: #fff;
 		font-size: 12px;
 		font-weight: 300;
@@ -150,7 +150,7 @@
 		}
 
 		.right-content {
-			background-color: #f57500;
+			background-color: var(--primary-color);
 		}
 	}
 

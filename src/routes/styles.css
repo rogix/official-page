@@ -10,6 +10,8 @@
 	--font-family-oswald: 'Oswald', sans-serif;
 	--font-family-mukta: 'Mukta Vaani', sans-serif;
 	--font-family-poppins: 'Poppins', sans-serif;
+	--primary-color: #ba5900;
+	--secondary-color: #f57500;
 	--breakpoint-sm: 640px;
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 1024px;

@@ -80,7 +80,7 @@
 		top: 80px;
 		width: 80px;
 		height: 180px;
-		background-color: #f57500;
+		background-color: var(--primary-color);
 	}
 
 	.aside {
