@@ -5,9 +5,9 @@
 <header>
 	<span class="lc" />
 	<nav>
-		<ul>
-			<li><a href="/">ROGIX</a></li>
-			<ul class="header-nav">
+		<div class="nav">
+			<a href="/">ROGIX</a>
+			<ul class="header-nav nav">
 				<li>
 					<a href="#about" on:click|preventDefault={scrollToSection}
 						>01.<span class="item">ABOUT</span></a
@@ -27,7 +27,7 @@
 					<button class="btn btn-primary">LET'S CHAT</button>
 				</div>
 			</ul>
-		</ul>
+		</div>
 	</nav>
 </header>
 
@@ -62,7 +62,7 @@
 		height: 100%;
 	}
 
-	nav ul {
+	.nav {
 		display: flex;
 		margin: 0;
 		justify-content: space-between;
@@ -75,7 +75,7 @@
 		letter-spacing: 4px;
 	}
 
-	nav ul div {
+	.nav div {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
@@ -84,7 +84,7 @@
 		height: 100%;
 	}
 
-	nav ul div button {
+	.nav div button {
 		height: 40px;
 		width: 140px;
 		border: none;
@@ -96,14 +96,14 @@
 		letter-spacing: 4px;
 	}
 
-	nav ul a {
+	.nav a {
 		display: flex;
 		color: #fff;
 		color: rgba(255, 255, 255, 0.51);
 		text-decoration: none;
 	}
 
-	nav ul a span {
+	.nav a span {
 		color: #f57500;
 	}
 

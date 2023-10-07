@@ -16,11 +16,10 @@
 				together.*
 			</p>
 
-			<p>*I love <span>svelte</span> btw.</p>
+			<p class="star">*This was not written by a machine. I !promise.</p>
 
+			<div class="tools">Some tools I play with:</div>
 			<ul>
-				<div>Some tools I play with:</div>
-
 				<li>JavaScript (ES6+)</li>
 				<li>React</li>
 				<li>Node.js</li>
@@ -80,7 +79,11 @@
 		gap: 20px;
 	}
 
-	.about__content ul div {
+	.star {
+		font-style: italic;
+	}
+
+	.about__content .tools {
 		font-family: 'Oswald', sans-serif;
 		font-size: 16px;
 		color: rgba(255, 255, 255, 0.51);
@@ -89,6 +92,7 @@
 		letter-spacing: 2px;
 		display: flex;
 		width: 100%;
+		margin-block: 20px;
 	}
 
 	.about__content ul li {
