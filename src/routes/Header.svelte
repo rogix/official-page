@@ -5,7 +5,7 @@
 <header>
 	<span class="lc" />
 	<nav class="nav">
-		<a href="/" aria-label="Hero section" tabindex="0">ROGIX</a>
+		<a href="/" aria-label="Rogix hero section" tabindex="0">ROGIX</a>
 		<div class="right-content">
 			<ul class="nav-items">
 				<li>
@@ -88,7 +88,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		background-color: #f57500;
 		width: 300px;
 		height: 100%;
 	}
@@ -148,6 +147,10 @@
 
 		.nav .corner {
 			display: flex;
+		}
+
+		.right-content {
+			background-color: #f57500;
 		}
 	}
 
