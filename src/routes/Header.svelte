@@ -12,7 +12,7 @@
 					<a
 						href="#about"
 						on:click|preventDefault={scrollToSection}
-						aria-label="01. About section"
+						aria-label="01.About section"
 						tabindex="0">01.<span class="nav-item">ABOUT</span></a
 					>
 				</li>
@@ -20,7 +20,7 @@
 					<a
 						href="#experience"
 						on:click|preventDefault={scrollToSection}
-						aria-label="02. Experience section"
+						aria-label="02.Experience section"
 						tabindex="0">02.<span class="nav-item">EXPERIENCE</span></a
 					>
 				</li>
@@ -28,7 +28,7 @@
 					<a
 						href="#work"
 						on:click|preventDefault={scrollToSection}
-						aria-label="03. Work section"
+						aria-label="03.Work section"
 						tabindex="0">03.<span class="nav-item">WORK</span></a
 					>
 				</li>
