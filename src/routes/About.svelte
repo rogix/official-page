@@ -3,10 +3,10 @@
 		<div class="about__content">
 			<h2><span>01.</span> About me</h2>
 			<p>
-				Greetings from the vibrant landscapes of Brazil! I've dedicated seven fulfilling years to
-				the software engineering world. My journey began with a profound interest in web UIs, driven
-				by the allure of designing captivating interfaces. Over time, my expertise has broadened.
-				Beyond just front-end development, I've delved deep into backend intricacies and have grown
+				Greetings from the vibrant landscapes of Brazil! Since 2014, I've been dedicated to the
+				software engineering world. My journey began with a profound interest in web interfaces,
+				driven by the allure of designing captivating ones. Over time, my expertise has broadened.
+				Beyond front-end development, I've delved deep into backend intricacies and have grown
 				passionate about the entirety of the software development process.
 			</p>
 			<p>
@@ -18,7 +18,7 @@
 
 			<div class="tools"><span>Tools</span>and<span>Softwares</span></div>
 			<p>
-				Overtime, I've worked with a variety of tools and technologies. Here are some of the
+				Over the years, I've worked with a variety of tools and technologies. Here are some of the
 				technologies I've worked with recently:
 			</p>
 			<ul>
