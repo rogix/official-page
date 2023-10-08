@@ -13,21 +13,22 @@
 				Are you faced with a technical challenge? I thrive on solving complex problems. While my
 				experiences have often intertwined with React.js and Node.js, I remain adaptable and eager
 				to explore new technologies. Let's collaborate and craft impactful digital solutions
-				together.*
+				together.
 			</p>
 
-			<p class="star">*This was not written by a machine. I !promise.</p>
-
-			<div class="tools">Some tools I play with:</div>
+			<div class="tools"><span>Tools</span>and<span>Softwares</span></div>
+			<p>
+				Overtime, I've worked with a variety of tools and technologies. Here are some of the
+				technologies I've worked with recently:
+			</p>
 			<ul>
 				<li>JavaScript (ES6+)</li>
 				<li>React</li>
 				<li>Node.js</li>
 				<li>Express</li>
 				<li>PostgreSQL</li>
-				<li>Git</li>
-				<li>HTML5</li>
-				<li>CSS3</li>
+				<li>Next.js</li>
+				<li>Typescript</li>
 				<li>Svelte</li>
 			</ul>
 		</div>
@@ -79,26 +80,30 @@
 		gap: 20px;
 	}
 
-	.star {
-		font-style: italic;
-	}
-
 	.about__content .tools {
 		font-family: 'Oswald', sans-serif;
 		font-size: 16px;
 		color: rgba(255, 255, 255, 0.51);
-		font-weight: 300;
+		font-weight: 500;
 		line-height: 1.5;
 		letter-spacing: 2px;
 		display: flex;
 		width: 100%;
 		margin-block: 20px;
+		font-size: large;
+		gap: 6px;
+		margin-block-start: 50px;
+	}
+
+	.about__content .tools span {
+		color: #f57500;
 	}
 
 	.about__content ul li {
-		background-color: #f57500;
 		padding: 10px 20px;
 		border-radius: 5px;
+		color: #ff9436;
+		border: 1px solid;
 	}
 
 	@media (min-width: 768px) {
@@ -129,6 +134,7 @@
 
 		.about__content {
 			margin-inline-start: 15%;
+			max-width: 700px;
 		}
 	}
 
