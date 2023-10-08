@@ -10,7 +10,7 @@
 			<h1>Welcome to my website</h1>
 			<h2>
 				Rogerio Pereira <br />
-				<span>Full-stack</span> developer<br /> from <span>Brazil</span>
+				<span>Full-stack</span> developer<br /> UI <span> artisan </span>
 			</h2>
 			<p>
 				This website is where you can discover my projects, resume, and insights. Feel free to
