@@ -3,26 +3,32 @@
 	import arrow from '$lib/icons/arrow.svg';
 	import { scrollToSection } from '$lib/utils/scrollUtils';
 
-	onMount(() => {
+	function handleScroll() {
 		const sections = document.querySelectorAll('section');
 		const navLinks = document.querySelectorAll('.navigation a');
 
-		window.addEventListener('scroll', () => {
-			let current = '';
-			sections.forEach((section) => {
-				const sectionTop = section.offsetTop;
-				const sectionHeight = section.clientHeight;
-				if (scrollY >= sectionTop - sectionHeight / 3) {
-					current = section.getAttribute('id') ?? '';
-				}
-			});
+		let current = '';
+		sections.forEach((section) => {
+			const sectionTop = section.offsetTop;
+			const sectionHeight = section.clientHeight;
+			if (scrollY >= sectionTop - sectionHeight / 3) {
+				current = section.getAttribute('id') ?? '';
+			}
+		});
 
-			navLinks.forEach((a) => {
-				a.classList.remove('active');
-				if (a.classList.contains(current)) {
-					a.classList.add('active');
-				}
-			});
+		navLinks.forEach((a) => {
+			a.classList.remove('active');
+
+			if (a.getAttribute('href') === `#${current}`) {
+				a.classList.add('active');
+			}
+		});
+	}
+
+	onMount(() => {
+		handleScroll();
+		window.addEventListener('scroll', () => {
+			handleScroll();
 		});
 	});
 </script>
@@ -33,7 +39,8 @@
 	<nav class="navigation">
 		<a
 			href="#hero"
-			class="hero"
+			id="hero"
+			class="active"
 			on:click|preventDefault={scrollToSection}
 			aria-label="Hero section"
 			tabindex="0"
@@ -42,7 +49,7 @@
 		</a>
 		<a
 			href="#about"
-			class="about active"
+			id="about"
 			on:click|preventDefault={scrollToSection}
 			aria-label="about section"
 			tabindex="0"
@@ -51,7 +58,7 @@
 		</a>
 		<a
 			href="#experience"
-			class="experience"
+			id="experience"
 			on:click|preventDefault={scrollToSection}
 			aria-label="experience section"
 			tabindex="0"
