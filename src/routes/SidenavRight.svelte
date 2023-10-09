@@ -26,7 +26,6 @@
 	}
 
 	onMount(() => {
-		handleScroll();
 		window.addEventListener('scroll', () => {
 			handleScroll();
 		});
