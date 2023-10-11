@@ -38,7 +38,6 @@
 	<nav class="navigation">
 		<a
 			href="#hero"
-			id="hero"
 			class="active"
 			on:click|preventDefault={scrollToSection}
 			aria-label="Hero section"
@@ -48,7 +47,6 @@
 		</a>
 		<a
 			href="#about"
-			id="about"
 			on:click|preventDefault={scrollToSection}
 			aria-label="about section"
 			tabindex="0"
@@ -57,7 +55,6 @@
 		</a>
 		<a
 			href="#experience"
-			id="experience"
 			on:click|preventDefault={scrollToSection}
 			aria-label="experience section"
 			tabindex="0"
