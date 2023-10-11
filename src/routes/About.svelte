@@ -26,7 +26,7 @@
 				<li>React</li>
 				<li>Node.js</li>
 				<li>Express</li>
-				<li>PostgreSQL</li>
+				<li>HTML5/CSS3</li>
 				<li>Next.js</li>
 				<li>Typescript</li>
 				<li>Svelte</li>
