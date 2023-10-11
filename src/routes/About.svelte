@@ -29,7 +29,7 @@
 				<li>HTML5/CSS3</li>
 				<li>Next.js</li>
 				<li>Typescript</li>
-				<li>Svelte</li>
+				<li>Svelte/SveltKit</li>
 			</ul>
 		</div>
 	</div>
