@@ -17,7 +17,7 @@
 				contact <br />
 				me for questions or collaboration opportunities.
 			</p>
-			<button class="btn btn-primary">Resume</button>
+			<!-- <button class="btn btn-primary">Resume</button> -->
 		</div>
 	</div>
 </section>
@@ -76,7 +76,7 @@
 		color: var(--secondary-color);
 	}
 
-	.btn {
+	/* .btn {
 		background-color: var(--primary-color);
 		color: var(--white-color);
 		border: none;
@@ -87,7 +87,7 @@
 		text-transform: uppercase;
 		cursor: pointer;
 		margin-block-start: 10px;
-	}
+	} */
 
 	.circle {
 		display: none;
@@ -110,7 +110,7 @@
 		position: absolute;
 		top: 50%;
 		right: 100px;
-		left: -150px;
+		left: -170px;
 		height: 1px;
 		background: rgba(255, 255, 255, 0.2);
 	}
