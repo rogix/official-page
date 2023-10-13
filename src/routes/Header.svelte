@@ -34,7 +34,9 @@
 				</li>
 			</ul>
 			<div class="corner">
-				<button class="btn btn-primary">LET'S CHAT</button>
+				<button class="btn btn-primary">
+					<a href="https://calendly.com/rogmxp/30min" target="_blank"> LET'S CHAT </a>
+				</button>
 			</div>
 		</div>
 	</nav>
