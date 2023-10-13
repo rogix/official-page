@@ -34,7 +34,7 @@
 				</li>
 			</ul>
 			<div class="corner">
-				<button class="btn btn-primary">
+				<button class="btn">
 					<a href="https://calendly.com/rogmxp/30min" target="_blank"> LET'S CHAT </a>
 				</button>
 			</div>
@@ -123,10 +123,13 @@
 
 	.nav a {
 		display: flex;
-		color: #fff;
 		color: rgba(255, 255, 255, 0.51);
 		text-decoration: none;
 		padding: 5px 10px;
+	}
+
+	.btn a {
+		color: #fff;
 	}
 	.nav a span {
 		color: #f57500;
