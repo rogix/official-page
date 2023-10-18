@@ -160,17 +160,12 @@
 
 	@media (min-width: 1280px) {
 		.hero__content h2 {
-			line-height: 62px;
-			font-size: 50px;
+			line-height: 72px;
+			font-size: 60px;
 		}
 	}
 
 	@media (min-width: 1536px) {
-		.hero__content h2 {
-			line-height: 72px;
-			font-size: 60px;
-		}
-
 		.hero__content {
 			top: 10%;
 			left: 0;
