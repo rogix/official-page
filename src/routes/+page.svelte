@@ -6,6 +6,7 @@
 <section class="hero" id="hero">
 	<div class="hero__container">
 		<div class="circle" />
+		<div class="line" />
 		<div class="hero__content">
 			<h1>Welcome to my website</h1>
 			<h2>
@@ -118,7 +119,7 @@
 	.circle::after {
 		content: '';
 		position: absolute;
-		left: -120px;
+		left: -5px;
 		width: 8px;
 		height: 8px;
 		border-radius: 50%;
@@ -126,6 +127,7 @@
 		margin-top: -4px;
 		transition: all 0.5s ease-in-out;
 		transform: scale(1);
+		background: var(--secondary-color);
 	}
 
 	@media (min-width: 768px) {
@@ -173,6 +175,14 @@
 
 		.circle {
 			left: -15%;
+		}
+
+		.circle::before {
+			left: -150px;
+		}
+
+		.circle::after {
+			left: -150px;
 		}
 	}
 </style>
