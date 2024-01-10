@@ -3,7 +3,7 @@
 		<div class="experience__content">
 			<h2><span>02. </span>Where I've worked</h2>
 			<p>
-				Over the years, I've had the opportunity to work with some fantastic companies and people.
+				In my career, I've had the opportunity to work with some fantastic companies and people.
 				I've learned a lot from each of these experiences.
 			</p>
 
