@@ -1,6 +1,7 @@
 <script>
 	import About from './About.svelte';
 	import Experience from './Experience.svelte';
+	import Projects from './Projects.svelte';
 </script>
 
 <section class="hero" id="hero">
@@ -25,6 +26,8 @@
 
 <About />
 <Experience />
+
+<!-- <Projects /> -->
 
 <style>
 	:root {

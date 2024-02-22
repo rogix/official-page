@@ -24,18 +24,18 @@
 						tabindex="0">02.<span class="nav-item">EXPERIENCE</span></a
 					>
 				</li>
-				<li>
+				<!-- <li>
 					<a
 						href="#work"
 						on:click|preventDefault={scrollToSection}
 						aria-label="03.Work section"
 						tabindex="0">03.<span class="nav-item">WORK</span></a
 					>
-				</li>
+				</li> -->
 			</ul>
 			<div class="corner">
 				<button class="btn">
-					<a href="https://calendly.com/rogmxp/30min" target="_blank"> LET'S CHAT </a>
+					<a href="https://blog.rogix.dev" target="_blank">BLOG PAGE</a>
 				</button>
 			</div>
 		</div>

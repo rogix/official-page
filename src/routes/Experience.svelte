@@ -44,6 +44,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		min-height: 100vh;
 	}
 
 	.experience h2 {
