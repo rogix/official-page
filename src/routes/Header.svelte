@@ -35,7 +35,7 @@
 			</ul>
 			<div class="corner">
 				<button class="btn">
-					<a href="https://blog.rogix.dev" target="_blank">BLOG PAGE</a>
+					<a href="https://blog.rogix.dev">BLOG PAGE</a>
 				</button>
 			</div>
 		</div>
