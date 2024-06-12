@@ -2,6 +2,7 @@
 	import github from '$lib/icons/github.svg';
 	import linkedin from '$lib/icons/linkedin.svg';
 	import youtube from '$lib/icons/youtube.svg';
+	import bluesky from '$lib/icons/bluesky.svg';
 </script>
 
 <aside>
@@ -22,9 +23,9 @@
 			>
 		</li>
 		<li>
-			<a href="https://www.youtube.com/@saindodoloop"
+			<a href="https://bsky.app/profile/rogix.bsky.social"
 				><span>
-					<img src={youtube} alt="youtube" class="icon" />
+					<img src={bluesky} alt="youtube" class="icon" />
 				</span></a
 			>
 		</li>
