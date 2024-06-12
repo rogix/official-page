@@ -3,17 +3,17 @@
 		<div class="about__content">
 			<h2><span>01.</span> About me</h2>
 			<p>
-				Greetings from the vibrant landscapes of Brazil! Since 2014, I've been dedicated to the
-				software engineering world. My journey began with a profound interest in web interfaces,
-				driven by the allure of designing captivating ones. Over time, my expertise has broadened.
-				Beyond front-end development, I've delved deep into backend intricacies and have grown
-				passionate about the entirety of the software development process.
+				Hello, I’m Rogerio, a software engineer with a strong foundation in web development. Over
+				the past 7 years, I have collaborated with companies and clients to create innovative
+				digital solutions. During this time, I have crafted my skills in both front-end and
+				full-stack development, working with a variety of technologies and tools, including
+				React.js, Svelte, Node.js, and Express.
 			</p>
 			<p>
-				Are you faced with a technical challenge? I thrive on solving complex problems. While my
-				experiences have often intertwined with React.js and Node.js, I remain adaptable and eager
-				to explore new technologies. Let's collaborate and craft impactful digital solutions
-				together.
+				I'm always looking for new challenges and opportunities to learn and grow as a developer.
+				I'm passionate about creating clean, efficient, and user-friendly applications that help
+				businesses achieve their goals. If you're looking for a developer who can bring your ideas
+				to life, I'd love to hear from you!
 			</p>
 
 			<div class="tools"><span>Tools</span>and<span>Softwares</span></div>
@@ -29,7 +29,8 @@
 				<li>HTML5/CSS3</li>
 				<li>Next.js</li>
 				<li>Typescript</li>
-				<li>Svelte/SveltKit</li>
+				<li>Svelte</li>
+				<li>SveltKit</li>
 			</ul>
 		</div>
 	</div>

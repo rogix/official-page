@@ -34,6 +34,15 @@
 						on the company's main website, developing new features and maintaining the website.
 					</p>
 				</li>
+				<li class="experience__content--list-item">
+					<h3>Web Developer <span>@ Freelancing</span></h3>
+					<h4>2016 - 2017</h4>
+					<p>
+						As a freelancer, I developed websites for small businesses and individuals. I worked
+						with clients helping them to build their online presence. At the time, I was working
+						with HTML, CSS, JavaScript, and WordPress.
+					</p>
+				</li>
 			</ul>
 		</div>
 	</div>
