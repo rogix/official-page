@@ -61,9 +61,15 @@
 		>
 			<span />
 		</a>
-		<!-- <a href="#work" class="work">
+		<a
+			href="#projects"
+			class="projects"
+			on:click|preventDefault={scrollToSection}
+			aria-label="projects section"
+			tabindex="0"
+		>
 			<span />
-		</a> -->
+		</a>
 	</nav>
 	<div class="scroll-down">
 		<div class="scroll-wrapper">

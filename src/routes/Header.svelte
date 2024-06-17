@@ -26,7 +26,7 @@
 				</li>
 				<li>
 					<a
-						href="#work"
+						href="#projects"
 						on:click|preventDefault={scrollToSection}
 						aria-label="03.Work section"
 						tabindex="0">03.<span class="nav-item">WORK</span></a
