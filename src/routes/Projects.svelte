@@ -1,6 +1,9 @@
 <script>
-	import image from '$lib/img/poramaisb.png';
-	import ibge from '$lib/img/ibge.png';
+	import image from '$lib/img/por-a-mais-b.png';
+	import ibge from '$lib/img/ibge-educa.png';
+	import rogixdev from '$lib/img/rogix-dev.jpeg';
+	import rogixblog from '$lib/img/rogix-blog.jpeg';
+	import petcare from '$lib/img/pet-care.jpeg';
 </script>
 
 <section class="projects" id="projects">
@@ -13,10 +16,10 @@
 			</p>
 
 			<ul class="projects__content--list">
-				<li class="projects__content--list-item side__content">
+				<li class="projects__content--list-item">
+					<h3>Foco Escola</h3>
 					<img src={image} alt="Por A Mais B" />
-					<div class="text__content-right">
-						<h3>Foco Escola</h3>
+					<!-- <div class="text__content-right">
 						<p>
 							Foco Escola is a dynamic educational platform that streamlines the process of
 							identifying students' learning needs and prioritizing pedagogical actions. It offers
@@ -25,11 +28,12 @@
 							management by providing educators and administrators with essential educational
 							insights, aiding in both addressing challenges and celebrating academic achievements.
 						</p>
-					</div>
+					</div> -->
 				</li>
-				<li class="projects__content--list-item side__content">
-					<div class="text__content-left">
-						<h3>IBGE Educa</h3>
+				<li class="projects__content--list-item">
+					<h3>IBGE Educa</h3>
+					<img src={ibge} alt="IBGE" />
+					<!-- <div class="text__content-left">
 						<p>
 							IBGE Educa is an educational portal. It serves as an engaging online resource for
 							learning about Brazil, targeting children, young people, and educators. The site
@@ -38,10 +42,36 @@
 							its demographic aspects. This platform is ideal for enriching classroom discussions
 							and providing a comprehensive understanding of Brazil's diverse realities.
 						</p>
-					</div>
-					<img src={ibge} alt="IBGE" />
+					</div> -->
 				</li>
 			</ul>
+			<section class="other-projects">
+				<h3>Other projects</h3>
+				<p>
+					Here are some other projects I've worked on. These are some projects I've worked on in my
+					free time.
+				</p>
+				<div class="other-projects__content">
+					<div>
+						<h4>Website</h4>
+						<a href="https://rogix.dev" target="_blank" rel="noopener noreferrer">
+							<img src={rogixdev} alt="Rogix Dev" />
+						</a>
+					</div>
+					<div>
+						<h4>Blog</h4>
+						<a href="https://blog.rogix.dev" target="_blank" rel="noopener noreferrer">
+							<img src={rogixblog} alt="Rogix Blog" />
+						</a>
+					</div>
+					<div>
+						<h4>Pet Care</h4>
+						<a href="https://pet-care-drab.vercel.app/" target="_blank" rel="noopener noreferrer">
+							<img src={petcare} alt="Pet Care" />
+						</a>
+					</div>
+				</div>
+			</section>
 		</div>
 	</div>
 </section>
@@ -83,9 +113,36 @@
 		letter-spacing: 2px;
 	}
 
-	.projects__content--list {
+	.projects__content--list,
+	.other-projects__content {
 		list-style: none;
 		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 40px;
+		justify-content: center;
+	}
+
+	.other-projects {
+		margin-top: 80px;
+	}
+
+	.other-projects h3 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 30px;
+		color: #fff;
+		line-height: 1.4;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.other-projects h4 {
+		font-size: 20px;
+		color: #f57500;
+		line-height: 1.4;
+		font-weight: 500;
+		margin: 0;
+		margin-block-end: 5px;
 	}
 
 	.projects__content--list li {
@@ -107,48 +164,7 @@
 
 	.projects__content--list-item img {
 		width: 100%;
-		max-width: 50%;
 		height: 100%;
-	}
-
-	.projects__content--list-item p {
-		font-family: 'Oswald', sans-serif;
-		font-size: 16px;
-		color: rgba(255, 255, 255, 0.51);
-		font-weight: 300;
-		line-height: 1.5;
-		letter-spacing: 2px;
-		margin: 0;
-		padding-block-start: 16px;
-	}
-
-	.side__content {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		gap: 80px;
-		position: relative;
-	}
-
-	.text__content-right {
-		margin-top: 40px;
-	}
-
-	.text__content-right p,
-	.text__content-left p {
-		width: 500px;
-		background-color: #f57500;
-		padding: 30px;
-		font-size: 12px;
-		top: 120px;
-		color: #fff;
-	}
-
-	.text__content-right h3 {
-		font-size: 20px;
-		color: #fff;
-		padding-bottom: 10px;
 	}
 
 	@media (min-width: 768px) {

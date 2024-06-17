@@ -26,8 +26,7 @@
 
 <About />
 <Experience />
-
-<!-- <Projects /> -->
+<Projects />
 
 <style>
 	:root {

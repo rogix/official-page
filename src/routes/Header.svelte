@@ -24,14 +24,14 @@
 						tabindex="0">02.<span class="nav-item">EXPERIENCE</span></a
 					>
 				</li>
-				<!-- <li>
+				<li>
 					<a
 						href="#work"
 						on:click|preventDefault={scrollToSection}
 						aria-label="03.Work section"
 						tabindex="0">03.<span class="nav-item">WORK</span></a
 					>
-				</li> -->
+				</li>
 			</ul>
 			<div class="corner">
 				<button class="btn">
