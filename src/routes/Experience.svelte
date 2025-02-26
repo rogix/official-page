@@ -9,8 +9,15 @@
 
 			<ul class="experience__content--list">
 				<li class="experience__content--list-item">
+					<h3>Front-end Engineer <span>@ Bee2Pay</span></h3>
+					<h4>2024 - present</h4>
+					<p>
+						Bee2Pay is a Brazilian fintech company that develops solutions for the financial sector.
+					</p>
+				</li>
+				<li class="experience__content--list-item">
 					<h3>Front-end | Full-stack Engineer <span>@ Ilegra</span></h3>
-					<h4>2021 - present</h4>
+					<h4>2021 - 2024</h4>
 					<p>
 						Ilegra is a software factory that develops solutions for the digital transformation of
 						businesses. I work as a front-end engineer, developing products for the company's
