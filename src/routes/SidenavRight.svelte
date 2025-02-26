@@ -61,7 +61,7 @@
 		>
 			<span />
 		</a>
-		<a
+		<!-- <a
 			href="#projects"
 			class="projects"
 			on:click|preventDefault={scrollToSection}
@@ -69,7 +69,7 @@
 			tabindex="0"
 		>
 			<span />
-		</a>
+		</a> -->
 	</nav>
 	<div class="scroll-down">
 		<div class="scroll-wrapper">
